@@ -1,0 +1,11 @@
+<h1>Edit your To Do</h1>
+
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :title, placeholder: 'Title' %>
+  <br><br>
+  <%= f.text_field :details, placeholder:'Details' %>
+    <br><br>
+  <%= f.submit %>
+<% end %>
+<br>
+<%= link_to 'Back to To Do\'s' , tasks_path(@index)  %>

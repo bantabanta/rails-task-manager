@@ -1,0 +1,6 @@
+<h1> <%= @task.title %>
+</h1>
+<p><%= @task.details %></p>
+<%= link_to 'Back to To Do\'s' , tasks_path(@index)  %>
+<br><br>
+<%= link_to "+ Edit this To Do", edit_task_path %>
